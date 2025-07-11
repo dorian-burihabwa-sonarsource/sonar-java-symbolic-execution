@@ -15,20 +15,10 @@
   <name>SonarQube Java :: Symbolic Execution Checks Test Sources</name>
 
   <properties>
-    <sonar.skip>true</sonar.skip>
     <forbiddenapis.skip>true</forbiddenapis.skip>
     <skipTests>true</skipTests>
     <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
-
-  <profiles>
-    <profile>
-      <id>analyze-tests</id>
-      <properties>
-        <sonar.skip>false</sonar.skip>
-      </properties>
-    </profile>
-  </profiles>
 
   <build>
     <plugins>
